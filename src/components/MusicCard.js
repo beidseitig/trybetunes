@@ -9,7 +9,7 @@ class MusicCard extends React.Component {
     this.state = {
       loading: false,
       checkedSongs: [],
-      isChecked: false,
+      isChecked: '',
     };
     this.addFavorite = this.addFavorite.bind(this);
     this.favoriteMusic = this.favoriteMusic.bind(this);
@@ -21,13 +21,14 @@ class MusicCard extends React.Component {
 
   async addFavorite({ target }) {
     const { music } = this.props;
-    this.setState({ loading: true });
+    const value = target.checked;
+    this.setState({ loading: true, isChecked: value });
     if (target.checked) {
       await addSong(music);
     } else {
       await removeSong(music);
     }
-    this.setState({ loading: false, isChecked: true });
+    this.setState({ loading: false });
   }
 
   async favoriteMusic() {
