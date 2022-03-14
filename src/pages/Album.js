@@ -47,8 +47,8 @@ class Album extends React.Component {
         ) : (
           <Loading />
         )}
-        {musics.map((e) => (
-          <MusicCard key={ e.trackId } { ...e } music={ e } />
+        {musics.map((element) => (
+          <MusicCard key={ element.trackId } music={ element } />
         ))}
       </div>
     );
