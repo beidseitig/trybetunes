@@ -6,7 +6,7 @@ Uma aplicação capaz de listar músicas das mais variadas bandas e artistas e c
 ## Técnologias usadas
 
 Front-end:
-> Desenvolvido usando: React, CSS3, HTML5, ES6
+> Desenvolvido usando: React, CSS3, HTML5, JavaScript
 
 ## Instalando Dependências
 
