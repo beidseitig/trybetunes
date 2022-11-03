@@ -1,7 +1,7 @@
 # TrybeTunes
 
 # Contexto
-Uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas e criar uma lista de músicas favoritas
+Uma aplicação capaz de listar músicas das mais variadas bandas e artistas e criar uma lista de músicas favoritas
 
 ## Técnologias usadas
 
